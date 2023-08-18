@@ -10,10 +10,10 @@
 _✨ Your Most Reliable Programming Assistant! ✨_
 <!-- prettier-ignore-end -->
 <p align="center">
-  <img src="https://img.shields.io/github/v/release/ltyzzzxxx/killbug?display_name=tag" />
-  <img src="https://img.shields.io/github/stars/ltyzzzxxx/killbug" />
-  <img src="https://img.shields.io/github/forks/ltyzzzxxx/killbug" />
-  <img src="https://img.shields.io/github/issues/ltyzzzxxx/killbug" />
+  <img src="https://img.shields.io/github/v/release/Poison02/kill-bug?display_name=tag" />
+  <img src="https://img.shields.io/github/stars/Poison02/kill-bug" />
+  <img src="https://img.shields.io/github/forks/Poison02/kill-bug" />
+  <img src="https://img.shields.io/github/issues/Poison02/kill-bug" />
   <img src="https://img.shields.io/badge/license-Apache%20-yellow.svg" />
 </p>
 </div>
