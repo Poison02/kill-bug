@@ -1,0 +1,32 @@
+package com.killbug.bounty.api.domain;
+
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.killbug.common.domain.BaseEntity;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+/**
+ * @author Zch
+ * @date 2023/8/19
+ **/
+@Data
+@NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
+@TableName("solution")
+public class Solution extends BaseEntity {
+
+    @TableField(value = "id")
+    private Long id;
+
+    @NotNull(message = "bountyId cannot be null")
+    private Long bountyId;
+
+    @NotBlank(message = "content of the solution cannot be null")
+    private String content;
+
+}
