@@ -3,8 +3,8 @@ package com.killbug.common.mybatis.handler;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.http.HttpStatus;
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
-import com.killbug.common.domain.BaseEntity;
-import com.killbug.common.exception.ServiceException;
+import com.killbug.common.core.domain.BaseEntity;
+import com.killbug.common.core.exception.ServiceException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.reflection.MetaObject;
 

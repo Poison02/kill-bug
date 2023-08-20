@@ -2,8 +2,8 @@ package com.killbug.question.api.domain;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.killbug.common.domain.BaseEntity;
-import com.killbug.common.xss.Xss;
+import com.killbug.common.core.domain.BaseEntity;
+import com.killbug.common.core.xss.Xss;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;

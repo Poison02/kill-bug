@@ -1,6 +1,6 @@
 package com.killbug.common.redis.utils;
 
-import com.killbug.common.utils.SpringUtils;
+import com.killbug.common.core.utils.SpringUtils;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.redisson.api.*;

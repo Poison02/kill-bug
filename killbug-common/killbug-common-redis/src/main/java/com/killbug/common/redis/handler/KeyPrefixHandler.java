@@ -1,6 +1,6 @@
 package com.killbug.common.redis.handler;
 
-import com.killbug.common.utils.StringUtils;
+import com.killbug.common.core.utils.StringUtils;
 import org.redisson.api.NameMapper;
 
 /**

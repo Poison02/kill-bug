@@ -3,7 +3,7 @@ package com.killbug.common.satoken.utils;
 import cn.dev33.satoken.context.SaHolder;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.hutool.core.util.ObjectUtil;
-import com.killbug.common.utils.StringUtils;
+import com.killbug.common.core.utils.StringUtils;
 import com.killbug.user.api.model.LoginUser;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

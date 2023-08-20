@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.killbug.question.mapper.ThumbupMapper">
+    
+    <resultMap id="ThumbupResult" type="com.killbug.question.api.domain.Thumbup">
+        <id property="id" column="id"/>
+        <result property="likedId" column="liked_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="type" column="type"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+    
+</mapper>

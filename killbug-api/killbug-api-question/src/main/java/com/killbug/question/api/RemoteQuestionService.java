@@ -1,6 +1,6 @@
 package com.killbug.question.api;
 
-import com.killbug.common.vo.ListVO;
+import com.killbug.common.core.vo.ListVO;
 import com.killbug.question.api.vo.QuestionVO;
 
 import java.util.List;
