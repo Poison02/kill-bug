@@ -38,6 +38,7 @@
         <lock4j.version>2.2.3</lock4j.version>
         <dynamic-ds.version>3.5.2</dynamic-ds.version>
         <easy-es.version>1.1.0</easy-es.version>
+        <ip2region.version>2.6.3</ip2region.version>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
@@ -178,6 +179,12 @@
                 <groupId>cn.easy-es</groupId>
                 <artifactId>easy-es-boot-starter</artifactId>
                 <version>${easy-es.version}</version>
+            </dependency>
+            <!-- ip2region -->
+            <dependency>
+                <groupId>org.lionsoul</groupId>
+                <artifactId>ip2region</artifactId>
+                <version>${ip2region.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
