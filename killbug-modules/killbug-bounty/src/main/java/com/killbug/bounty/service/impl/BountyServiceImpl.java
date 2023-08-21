@@ -98,7 +98,7 @@ public class BountyServiceImpl implements IBountyService {
 
     @Override
     public BountyVO getBountyById(Long idInt) {
-        Bounty bounty = bountyMapper.selectById(id);
+        Bounty bounty = bountyMapper.selectById(idInt);
         BountyVO vo = new BountyVO();
         BeanCopyUtils.copy(bounty, vo);
         Set<String> set = RedisUtils.getCacheSet("tags:" + bounty.getId().toString());
