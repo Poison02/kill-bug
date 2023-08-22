@@ -1,7 +1,7 @@
 package com.killbug.index.service;
 
-import com.killbug.common.core.vo.ListVO;
 import com.killbug.question.api.RemoteQuestionService;
+import com.killbug.common.core.vo.ListVO;
 import com.killbug.question.api.vo.QuestionVO;
 import com.killbug.user.api.RemoteUserService;
 import com.killbug.user.api.domain.User;

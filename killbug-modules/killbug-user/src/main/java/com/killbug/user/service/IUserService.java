@@ -5,6 +5,7 @@ import com.killbug.user.dto.AccountSettingDTO;
 import com.killbug.user.dto.UserProfileDTO;
 
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 /**
  * @author Zch
@@ -22,7 +23,7 @@ public interface IUserService {
 
     void decrBalanceById(Long userId, Integer reward);
 
-    Map<String, Object> renderUserSpace(Long id);
+    Map<String, Object> renderUserSpace(Long id) throws ExecutionException, InterruptedException;
 
     User getCurrentUser();
 
