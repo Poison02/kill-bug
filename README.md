@@ -122,7 +122,17 @@ kill-bug是一个易于使用的平台，专为程序员解决日常开发中遇
 - `killbug-websocket`
 - `killbug-gateway`
 5. 启动前端</br>
-进入 `killbug-frontend`模块，使用命令启动
+进入 `killbug-frontend`模块，首先需要配置阿里云oss的一些配置：
+```tsx
+// 在pages/user/profile/index.tsx下面配置：
+const client = new OSS({
+  region: '',
+  accessKeyId: '',
+  accessKeySecret: '',
+  bucket: 'kill-bug',
+});
+```
+使用命令启动：
 ```bash
 # 安装依赖
 yarn
@@ -137,4 +147,18 @@ yarn build
 访问 http://localhost:3000 端口即可看到页面
 
 ### Docker部署
-### Docker Compose部署
+1. 在 `/docker`目录下的 `docker-compose.yml`文件里面先构建基础运行环境</br>
+执行命令 `docker compose up -d mysql redis nacos` 构建对应环境
+2. 在以下模块中构建对应的微服务镜像
+```
+- killbug-auth
+- killbug-modules/kullbug-bounty
+- killbug-modules/kullbug-user
+- killbug-modules/kullbug-question
+- killbug-modules/kullbug-chat
+- killbug-modules/kullbug-index
+- killbug-websocket
+- killbug-gateway
+```
+执行命令 `docker build -t [微服务名字] .`
+3. 运行前端即可（若不是本地运行的话，前端连接后端的地址要改成虚拟机或者服务器的地址）
