@@ -38,23 +38,17 @@ type MenuItem = Required<MenuProps>['items'][number];
 
 const { confirm } = Modal;
 
-const getItem = (
-  label: React.ReactNode,
-  key?: React.Key | null,
-  icon?: React.ReactNode,
-  children?: MenuItem[]
-): MenuItem => {
-  return {
-    key,
-    icon,
-    children,
-    label,
-  };
-};
-
 const items: MenuItem[] = [
-  getItem('Personal Profile', '0', <ProfileOutlined />),
-  getItem('Account Setting', '1', <SettingOutlined />),
+ {
+    label:'Personal Profile',
+    key:'0',
+    icon:<ProfileOutlined />
+  },
+  {
+    label:'Account Setting',
+    key:'1',
+    icon:<SettingOutlined />
+  },
 ];
 
 const validateMessages = {
@@ -161,8 +155,8 @@ const Profile: NextPage = ({ data, error }) => {
         ...store.user.userInfo,
         avatar: avatar,
         nickname: values.nickname,
-      });
-      let user = JSON.parse(Cookies.get('user'))
+      }); 
+      let user = JSON.parse(Cookies.get('user')??'')
       user.avatar = avatar
       user.nickname = values.nickname
       Cookies.set('user', JSON.stringify(user));

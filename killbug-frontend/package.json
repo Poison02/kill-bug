@@ -48,6 +48,7 @@
     "yjs": "^13.6.0"
   },
   "devDependencies": {
+    "@types/ali-oss": "^6.16.8",
     "@types/js-cookie": "^3.0.3",
     "@types/lodash": "^4.14.194",
     "@types/mockjs": "^1.0.7",
