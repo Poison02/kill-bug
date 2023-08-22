@@ -54,8 +54,20 @@ kill-bug是一个易于使用的平台，专为程序员解决日常开发中遇
 |       Hutool       | 5.8.10     |
 |        satoken     | 1.33.0     |
 
-前端：
+前端技术栈：
 
+|  Technology  |                           Feature                            |
+| :----------: | :----------------------------------------------------------: |
+|    React     |              基本 Web 框架                |
+|   Next.js    | SSR 框架 |
+|  Ant Design  | UI 组件库 |
+|     Mobx     | 全局状态管理库 |
+|    Axios     | HTTP 请求库 |
+|    Router    | 路由组件 |
+|     Mock     | HTTP 请求 mock |
+| Quill Editor | 富文本编辑器 |
+|    Socket    | 即时通信 / 协同编辑    |
+|  Js-Cookie   | Cookie 管理工具 |
 
 ## 模块树
 ```
@@ -88,5 +100,41 @@ kill-bug是一个易于使用的平台，专为程序员解决日常开发中遇
 ## 快速开始
 
 ### 本地启动
+1. 配置基础运行环境
+- `jdk1.8`
+- `maven3.6+`
+- `nacos 2.1.2` 端口8848
+- `redis 7.x` 端口6379
+- `MySQL 8.x` 端口3306
+2. 导入数据库数据，数据库数据在 `/data` 目录下，按照里面的`readme`导入即可
+3. 修改以下几个模块的数据库配置信息，主要是更改数据库连接账号密码即可
+- `killbug-modules/kullbug-bounty`
+- `killbug-modules/kullbug-chat`
+- `killbug-modules/kullbug-user`
+- `killbug-modules/kullbug-question`
+4. 启动以下几个微服务模块
+- `killbug-auth`
+- `killbug-modules/kullbug-bounty`
+- `killbug-modules/kullbug-user`
+- `killbug-modules/kullbug-question`
+- `killbug-modules/kullbug-chat`
+- `killbug-modules/kullbug-index`
+- `killbug-websocket`
+- `killbug-gateway`
+5. 启动前端</br>
+进入 `killbug-frontend`模块，使用命令启动
+```bash
+# 安装依赖
+yarn
+
+# 构建运行
+yarn dev
+
+# 打包
+yarn build
+```
+6. 打开浏览器访问</br>
+访问 http://localhost:3000 端口即可看到页面
+
 ### Docker部署
 ### Docker Compose部署
